@@ -10,7 +10,6 @@ try:
         if "ai" in use_category:
             import scikit-learn, tensorflow
             print('Importing AI modules')
-    
     except:
         print('Error loading special modules')
         
