@@ -8,7 +8,7 @@ try:
             print('Importing web modules')
             
         if "ai" in use_category:
-            import scikit-learn, tensorflow
+            import sklearn, tensorflow
             print('Importing AI modules')
     except:
         print('Error loading special modules')
