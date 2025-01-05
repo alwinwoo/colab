@@ -1,10 +1,11 @@
 def load_common_modules(use_category):
     try:
-        import os, sys, math, datetime, re, json, random, time, itertools, subprocess, logging
+        import os, sys, re, json, itertools, subprocess
+        import time, datetime, pytz
+        import math, random
+        import logging
         import csv, numpy, pandas, matplotlib
-
-        print('Common modules loaded')
-        
+    
         try:
             if "web" in use_category:
                 import requests, beautifulsoup4
