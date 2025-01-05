@@ -10,8 +10,11 @@ try:
         if "ai" in use_category:
             import sklearn, tensorflow
             print('Importing AI modules')
-    except:
-        print('Error loading special modules')
+
+        print('Special modules loaded')
         
-except:
-    print('Error loading common modules"')
+    except Exception as e:
+        print(f'Error loading special modules: {e}')
+        
+except Exception as e:
+    print(f'Error loading common modules: {e}')
