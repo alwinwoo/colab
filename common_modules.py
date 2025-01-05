@@ -5,9 +5,12 @@ try:
     try:
         if "web" in use_category:
             import requests, beautifulsoup4
+            
         if "ai" in use_category:
             import scikit-learn, tensorflow
-        except:
-            print('"use_category" list missing!"')
+    
+    except:
+        print('Error loading special modules')
+        
 except:
     print('Error loading common modules"')
