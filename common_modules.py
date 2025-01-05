@@ -1,9 +1,12 @@
 try:
     import os, sys, re, json, itertools, subprocess
-    import time, datetime, pytz
+    import time, datetime
     import math, random
     import logging
     import csv, numpy, pandas, matplotlib
+
+    os.system('pip install pytz')
+    import pytz
     
     try:
         if "web" in use_category:
