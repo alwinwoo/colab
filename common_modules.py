@@ -18,7 +18,13 @@ def load_common_modules(use_category):
             print('Special modules loaded')
             
         except Exception as e:
-            print(f'Error loading special modules: {e}')
+            try:
+                if "web" in use_category:
+                    !pip install beautifulsoup4
+                if "ai" in use_category:
+                    !pip install scikit-learn tensorflow
+            except Exception as e:
+                print(f'Error loading special modules: {e}')
             
     except Exception as e:
         print(f'Error loading common modules: {e}')
