@@ -19,9 +19,9 @@ try:
     except Exception as e:
         try:
             if "web" in use_category:
-                pip install beautifulsoup4
+                os.system('pip install beautifulsoup4')
             if "ai" in use_category:
-                pip install scikit-learn tensorflow
+                os.system('pip install scikit-learn tensorflow')
         except Exception as e:
             print(f'Error loading special modules: {e}')
             
